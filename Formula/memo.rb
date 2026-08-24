@@ -8,7 +8,7 @@
 class Memo < Formula
   desc "Per-repository vector memory for AI coding agents"
   homepage "https://github.com/cardiadev/memo"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   # Apple Silicon and Linux x64 only. Intel Macs are out of scope by choice;
@@ -16,7 +16,7 @@ class Memo < Formula
   on_macos do
     on_arm do
       url "https://github.com/cardiadev/memo/releases/download/v#{version}/memo-darwin-arm64.tar.gz"
-      sha256 "33a33def76c27f601ca50729a019a58925dc4c2f6557a8d60cfa5eb539d2f50a"
+      sha256 "2bd9740f1007d639291958e36607df37ef670dc05c4babf485a9dd1a5e41d383"
     end
     on_intel do
       odie "memo does not support Intel Macs. Apple Silicon (M1 or later) is required."
@@ -26,7 +26,7 @@ class Memo < Formula
   on_linux do
     on_intel do
       url "https://github.com/cardiadev/memo/releases/download/v#{version}/memo-linux-x64.tar.gz"
-      sha256 "2cd6d280044277b5406a083814dfb1f631b78814faad3c0e369a91f0a4840458"
+      sha256 "c2a58717fdfad3ea0e2ce3508034a136271faf5aed6440cfb0c2945c376a3018"
     end
     on_arm do
       odie "memo does not support Linux ARM64: the embedding tokenizer has no arm64 build upstream."
